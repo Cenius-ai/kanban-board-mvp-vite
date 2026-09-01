@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --accent: oklch(0.58 0.16 271);
+  --accent-hex: #5970d8;
+  --surface-bg: oklch(0.16 0.01 260);
+  --surface-fg: oklch(0.90 0.01 260);
+  --surface-muted: oklch(0.42 0.01 260);
+  --surface-border: oklch(0.30 0.01 260);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: 'Hanken Grotesk', system-ui, -apple-system, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  background-color: oklch(0.16 0.01 260);
+  color: oklch(0.90 0.01 260);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: oklch(0.36 0.01 260);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: oklch(0.42 0.01 260);
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: oklch(0.36 0.01 260) transparent;
+}
+
+/* Focus visible ring */
+:focus-visible {
+  outline: 2px solid oklch(0.58 0.16 271);
+  outline-offset: 2px;
+}
+
+/* Selection */
+::selection {
+  background-color: oklch(0.58 0.16 271 / 0.3);
+  color: oklch(0.95 0.00 260);
+}
