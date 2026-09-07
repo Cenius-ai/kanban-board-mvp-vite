@@ -23,7 +23,7 @@ _Local clone? See [Quick start](#quick-start) below. cenius.ai is the zero-setup
 
 ## Architecture
 
-No external services required: the entire kanban board runs from this Vite repo (41 files). Top-level layout: `public/`, `src/`. Full setup details: [`INSTALL.md`](INSTALL.md).
+No external services required: the entire kanban board runs from this Vite repo (30 files). Top-level layout: `public/`, `src/`. Full setup details: [`INSTALL.md`](INSTALL.md).
 
 ## Quick start
 
